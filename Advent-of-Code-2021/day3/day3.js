@@ -25,7 +25,7 @@ console.log(part1(getInput));
 
 
 
-//辅助函数1
+//辅助函数
 function getNum1(arr, m) {        //检测o2的m位的0,1情况。
     let numOf1 = arr.filter((item) => item[m] == 1).length;         //检测m位为1的数量，如果 >= arr长度的一半则m位为1；
     if (numOf1 * 2 >= arr.length) {
@@ -44,7 +44,7 @@ function getNum2(arr, m) {        //检测co2的m位的0,1情况。
     }
 }   
 
-//辅助函数2
+//主体函数
 function getOxy(arr) {
     for (let i = 0; i < arr[0].length;i++) {
         if (arr.length == 1) {   
